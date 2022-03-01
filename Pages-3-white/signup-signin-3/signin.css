@@ -1,0 +1,162 @@
+/* Css for left and right sides of page */
+.left{
+    background:rgb(204, 204, 204);
+    overflow: auto;
+    max-height: 100%;
+}
+
+.right{
+    margin-top: 1em;
+    height: 46.4rem;
+    background-image: repeating-linear-gradient(-45deg,
+    rgb(228, 223, 209),
+    rgb(202, 202, 201) 20px,
+    rgb(173, 173, 173) 20px,
+    rgb(230, 230, 222) 50px);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+/* Basic design of the page */
+html,
+body{
+    font-family: 'Times New Roman', serif;
+    height: 100%;
+    background-image: repeating-linear-gradient(-45deg,
+    rgb(0, 200, 250),
+    rgb(31, 177, 235) 20px,
+    rgb(51, 152, 235) 20px,
+    rgb(116, 204, 255) 60px);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    backdrop-filter: blur(10px);
+
+}
+
+
+
+input{
+    margin: 10px;
+}
+
+
+/* Adjusting size of left side on large devices */
+@media (min-height: 666px) {
+    .right{
+        margin-top:1em;
+        height: 35em;
+    }
+}
+
+
+
+
+
+.sign-in{
+    display: none;
+    margin-top: 15px;
+}
+
+
+.myForm{
+    background-color: rgb(240, 240, 240);
+}
+
+
+.form-control{
+    transition-duration: 900ms;
+
+    width: 70%;
+    height: 6vh;
+     margin: auto;
+
+    box-shadow: 10px;
+    text-align: center;
+}
+
+.form-control:hover{
+    
+    transition-duration: 900ms;
+    height: 8vh;
+    width: 80%;
+    background: rgb(182, 182, 182);
+    border:  0.2rem solid rgb(74, 75, 75);
+} 
+
+.form-control:focus{
+    
+    transition-duration: 900ms;
+    height: 8vh;
+    width: 80%;
+    background: rgb(204, 204, 204);
+    border:  0.2rem solid rgb(85, 85, 85);
+ 
+        
+} 
+
+.button{   
+    transition-duration: 300ms;
+    width: 13em;
+    height: 6vh;
+    border-width: 0.1rem;
+
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(253, 253, 253);
+}
+
+.button:hover{
+    transition-duration: 300ms;
+    width: 12em;
+    height: 5.5vh;
+    font-size:small;
+    color: aliceblue;
+    background-color: rgb(5, 5, 5);
+
+}
+
+.button-div{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.img{
+    transition-duration: 300ms;
+    height: 3em;
+    width: 3em;
+}
+
+.img:hover{
+    transition-duration: 300ms;
+    width: 4em;
+    height: 4em;
+}
+
+/* Removing left side and adding backgroung on small devices */
+@media (max-width: 991px) {
+    html,
+body{
+    height: 100%;
+    background-image: repeating-linear-gradient(-45deg,
+    rgb(0, 200, 250),
+    rgb(31, 177, 235) 20px,
+    rgb(51, 152, 235) 20px,
+    rgb(116, 204, 255) 60px);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    backdrop-filter: blur(10px);
+
+}
+.button{
+    height: 3em;
+}
+    .right{
+        display: none;
+    }
+    .sign-in{
+        display: inline;
+    }
+}

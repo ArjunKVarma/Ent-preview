@@ -1,0 +1,177 @@
+/* Css for left and right sides of page */
+.right{
+    background:#2a9df4;
+    overflow: auto;
+    max-height: 100%;
+}
+
+.left{
+    margin-top: 1em;
+    height: 46.4rem;
+    background: #d0efff;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+
+
+/* Basic design of the page */
+html,
+body{
+    font-family: Georgia, serif;
+    height: 100%;
+    background-image: repeating-linear-gradient(-45deg,
+    rgb(0, 200, 250),
+    rgb(31, 177, 235) 20px,
+    rgb(51, 152, 235) 20px,
+    rgb(116, 204, 255) 60px);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+/* changing border radius on large devices */
+@media (min-width : 992px) {
+    .right {
+        border-top-right-radius: 50px ;
+        border-bottom-right-radius: 50px;
+    }
+    .left {
+        
+        border-top-left-radius: 50px ;
+        border-bottom-left-radius: 50px;
+    }
+}
+
+/* Adjusting size of left side on large devices */
+@media (min-height: 666px) {
+    .left{
+        margin-top:1em;
+        height: 35em;
+    }
+}
+
+
+
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number]{
+    -moz-appearance: textfield;
+}
+
+
+.sign-in{
+    display: none;
+    margin-top: 15px;
+}
+
+
+.myForm{
+    background-color: rgb(89, 194, 243);
+    border-radius: 25px;
+}
+
+.form-control{
+    transition-duration: 900ms;
+    border-radius: 1rem;
+    width: 75%;
+    height: 6vh;
+    margin: auto;
+    border-radius: 30px; 
+    box-shadow: 10px;
+    text-align: center;
+
+ }
+.form-control:hover{
+    transition-duration: 900ms;
+    height: 8vh;
+    width: 80%;
+    background: rgb(175, 248, 248);
+    border:  0.2rem solid rgb(0, 162, 255);        
+} 
+
+.form-control:focus{
+    transition-duration: 900ms;
+    height: 8vh;
+    width: 80%;
+    background: rgb(175, 227, 248);
+    border:  0.2rem solid rgb(0, 162, 255);       
+} 
+
+.form{
+    text-align: center; 
+    margin: auto;
+}
+
+.button{
+    transition-duration: 300ms;
+    margin: 5px;
+    text-align: center;
+    width: 12em;
+    height: 7vh;
+    color: aliceblue;
+    border-width: 0.2rem;
+    border-radius: 3rem;
+    border-color: rgb(0, 162, 255);
+    background-color: rgb(0, 183, 255);
+}
+
+.button:hover{
+    transition-duration: 300ms;
+    width: 14em;
+    height: 8vh;
+    font-size:larger;
+    background-color: rgb(167, 228, 236);
+}
+
+.button-div{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.img{
+    transition-duration: 300ms;
+    height: 3em;
+    width: 3em;
+}
+.img:hover{
+    transition-duration: 300ms;
+    width: 5em;
+    height: 5em;
+}
+
+.nav{
+    justify-content: center;
+    background: rgb(33, 179, 247);
+
+}
+
+/* Removing left side and adding backgroung on small devices */
+@media (max-width: 991px) {
+    html,
+body{
+    height: 100%;
+    background-image: repeating-linear-gradient(-45deg,
+    rgb(0, 200, 250),
+    rgb(31, 177, 235) 20px,
+    rgb(51, 152, 235) 20px,
+    rgb(116, 204, 255) 60px);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%; 
+}
+.button{
+    height: 3em;
+}
+    .left{
+        display: none;
+    }
+    .sign-in{
+        display: inline;
+    }
+}

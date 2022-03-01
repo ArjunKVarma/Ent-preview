@@ -1,0 +1,141 @@
+
+html,body{
+    font-family: 'Times New Roman', serif;
+}
+
+
+
+.left{
+    padding: 0px;
+     background: conic-gradient(
+        from 45deg,
+        #9696a7 0,
+        #b7b7c4 90deg,
+        #848594 90deg,
+        #c4c5d6 180deg,
+        #c0c2d3 180deg,
+        #aaabb9 270deg,
+        #8c9ea8 270deg,
+        #adaeaf 360deg
+        );
+}
+
+.login
+{
+min-height: 100vh;
+}
+
+.bg-image{
+    background: conic-gradient(
+        from 45deg,
+        #9696a7 0,
+        #b7b7c4 90deg,
+        #848594 90deg,
+        #c4c5d6 180deg,
+        #c0c2d3 180deg,
+        #aaabb9 270deg,
+        #8c9ea8 270deg,
+        #adaeaf 360deg
+    );
+    background-size: 5em 5em;
+}
+
+.img{
+    transition-duration: 300ms;
+    height: 3em;
+    width: 3em;
+}
+
+.img:hover{
+    transition-duration: 300ms;
+    width: 5em;
+    height: 5em;
+}
+.sign-in{
+    display: none;
+    
+}
+
+
+
+
+
+.myForm{
+    background-color: rgba(240, 240, 240, 0.897);
+}
+
+.form-control{
+    transition-duration: 900ms;
+
+    width: 70%;
+    height: 6vh;
+     margin: auto;
+
+    box-shadow: 10px;
+    text-align: center;
+}
+
+.form-control:hover{
+    
+    transition-duration: 900ms;
+    height: 8vh;
+    width: 80%;
+    background: rgba(182, 182, 182, 0.767);
+    border:  0.2rem solid rgb(74, 75, 75);
+} 
+
+.form-control:focus{
+    
+    transition-duration: 900ms;
+    height: 8vh;
+    width: 80%;
+    background: rgb(204, 204, 204);
+    border:  0.2rem solid rgb(85, 85, 85);
+ 
+        
+} 
+
+.button{   
+    transition-duration: 300ms;
+    width: 12em;
+    height: 6vh;
+    border-width: 0.1rem;
+
+    border-color: rgb(255, 255, 255);
+    background-color: rgba(253, 253, 253, 0.753);
+}
+
+.button:hover{
+    transition-duration: 300ms;
+    width: 11em;
+    height: 5.5vh;
+    font-size:small;
+    color: aliceblue;
+    border-color: rgba(5, 5, 5, 0.733);
+    background-color: rgba(5, 5, 5, 0.733);
+
+}
+
+.button-div{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.texts{
+    background-color: rgba(174, 191, 204, 0.801);
+    font-size: larger;
+    height: 90vh; 
+    color: rgb(10, 10, 10);
+}
+
+
+
+@media (max-width: 991px) {
+    .button{
+        height: 3em;
+    }
+    .sign-in{
+        display: inline;
+    }
+}

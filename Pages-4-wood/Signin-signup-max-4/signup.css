@@ -1,0 +1,149 @@
+html,body{
+    font-family: 'Sofia';
+    overflow-x: hidden;
+}
+
+.nav-link{
+    color: rgb(44, 39, 33);
+}
+
+.bg-image{
+    background-color: rgb(153, 111, 34);
+    background-image:
+      linear-gradient(rgba(255,255,255,.5) 2px, transparent 2px),
+      linear-gradient(90deg, rgba(255,255,255,.5) 2px, transparent 2px),
+      linear-gradient(rgba(255,255,255,.28) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.28) 1px, transparent 1px);
+    background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+
+.texts{
+    background-color: rgba(184, 144, 70, 0.801);
+    font-size: larger;
+    height: 90vh; 
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+.right{
+    padding: 0px;
+     background: conic-gradient(
+        from 45deg,
+        rgb(153, 111, 34)  0,
+        rgb(180, 145, 81)  90deg,
+        rgb(206, 158, 68) 90deg,
+        rgb(212, 165, 76) 160deg,
+        rgb(153, 111, 34) 180deg,
+        rgb(206, 158, 69) 270deg,
+        rgb(155, 123, 63) 270deg,
+        rgb(202, 159, 79) 360deg
+        );
+        background-size: 20em 20em;
+}
+
+.login
+{
+min-height: 100vh;
+}
+
+.sign-in{
+    display: none;
+    margin-top: 15px;
+}
+
+.img{
+    transition-duration: 300ms;
+    height: 3em;
+    width: 3em;
+}
+.img:hover{
+    transition-duration: 300ms;
+    width: 5em;
+    height: 5em;
+}
+
+.nav{
+    justify-content: center;
+    background-color: #f0b445b9;   
+    overflow: hidden;
+}
+
+.panel{
+    background-color: #dfae54b9;
+    border-radius: 0px;
+    
+}
+
+.form-control{
+    transition-duration: 900ms;
+     border-radius: 1rem;
+     background: rgb(245, 204, 153);
+    width: 75%;
+    height: 6vh;
+     margin: auto;
+    border-radius: 30px; 
+    box-shadow: 10px;
+    text-align: center;
+}
+
+.form-control:hover{
+    
+    transition-duration: 900ms;
+    height: 8vh;
+    width: 80%;
+    background: rgb(243, 159, 90);
+    border:  0.2rem solid rgb(255, 123, 0);
+} 
+
+.form-control:focus{
+    
+    transition-duration: 900ms;
+    height: 8vh;
+    width: 80%;
+    background: rgb(248, 162, 81);
+    border:  0.2rem solid rgb(255, 174, 0);
+ 
+        
+} 
+
+.button{   
+    transition-duration: 300ms;
+    width: 12em;
+    height: 8vh;
+    margin: 5px;
+    border-width: 0.1rem;
+    border-radius: 3rem;
+    border-color: rgb(255, 145, 0);
+    background-color: rgb(238, 161, 73);
+}
+
+.button:hover{
+    transition-duration: 300ms;
+    width: 13em;
+    height: 10vh;
+    border-radius: 4rem;
+    font-size:larger;
+    text-decoration: line-through;
+    background-color: rgb(167, 228, 236);
+
+}
+
+.button-div{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+
+@media (max-width: 991px) {
+    .button{
+        height: 3em;
+    }
+    .sign-in{
+        display: inline;
+    }
+}
